@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="task3.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="task3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    
+    <div id="container">
+        <div class="container1">
+       <h3>Temperature Converter</h3><hr><br>
+       </div>
+       <div id="input">
+       <label id="enter1">Value To Convert:</label>
+       <input value="" name="enter" id="enter" placeholder="0"><br><br><br>
+       </div>
+       <div id="calci-input">
+        <label id="from">From:</label>
+        <select name="drop-input" id="drop-input">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Farenheit</option>
+        </div>
+        </select>
+        
+        <label id="to">To:</label>
+        <select name="drop-output" id="drop-output">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Farenheit</option>
+        </select>
+        <pre></pre><br>
+
+        <button id="clear" onclick="resetTemp()">CLEAR</button>
+        <button id="convert" onclick="convertTemp()">CONVERT</button>
+        <div id="area">
+            <label id="answer">Answer:</label>
+            <input type="text" value="" id="result">
+        </div>
+
+       </div>
+
+    </div>
+</body>
+</html>
